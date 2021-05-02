@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GetCourseDetailsRequest xmlns="http://in28minutes.com/courses">
+    <id>123</id> <!-- only numbers, we wll validate with XSD! -->
+</GetCourseDetailsRequest>

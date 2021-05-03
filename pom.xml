@@ -55,7 +55,7 @@
             <!-- JAXB2 Maven Plugin -->
             <!-- XSD Source Folder -->
             <!-- Java Object Source Folder -->
-            <!-- Clear Folder = false -->
+            <!-- clearOutputDir = false -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>jaxb2-maven-plugin</artifactId>

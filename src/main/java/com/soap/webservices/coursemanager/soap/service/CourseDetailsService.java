@@ -40,7 +40,7 @@ public class CourseDetailsService {
         return courses;
     }
 
-    public int deleteById(int id) {
+    public boolean deleteById(int id) {
 
         Iterator<Course> iterator = courses.iterator();
 
@@ -49,11 +49,11 @@ public class CourseDetailsService {
 
             if (course.getId() == id) {
                 iterator.remove();
-                return 1;
+                return true;
             }
         }
 
-        return 0;
+        return false;
     }
 
 }

@@ -40,8 +40,8 @@ public class CourseDetailsEndpoint {
         GetAllCourseDetailsResponse response = new GetAllCourseDetailsResponse();
 
         for (Course course : courses) {
-            CourseDetails mapCourse = mapCourse(course);
-            response.getCourseDetails().add(mapCourse);
+            CourseDetails currentCourse = mapCourse(course);
+            response.getCourseDetails().add(currentCourse);
         }
 
         return response;

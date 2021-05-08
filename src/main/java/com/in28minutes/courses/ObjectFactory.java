@@ -54,11 +54,27 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link DeleteCourseDetailsRequest }
+     * 
+     */
+    public DeleteCourseDetailsRequest createDeleteCourseDetailsRequest() {
+        return new DeleteCourseDetailsRequest();
+    }
+
+    /**
      * Create an instance of {@link GetCourseDetailsRequest }
      * 
      */
     public GetCourseDetailsRequest createGetCourseDetailsRequest() {
         return new GetCourseDetailsRequest();
+    }
+
+    /**
+     * Create an instance of {@link DeleteCourseDetailsResponse }
+     * 
+     */
+    public DeleteCourseDetailsResponse createDeleteCourseDetailsResponse() {
+        return new DeleteCourseDetailsResponse();
     }
 
     /**

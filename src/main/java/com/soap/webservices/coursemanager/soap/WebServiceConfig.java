@@ -20,12 +20,15 @@ public class WebServiceConfig {
     // Application Context
     // url -> /ws/*
 
+    // Receives application context
     @Bean
     public ServletRegistrationBean messageDispatcherServlet(ApplicationContext context) {
         MessageDispatcherServlet messageDispatcherServlet = new MessageDispatcherServlet();
+        // Applies context to messageDispatcherServlet
         messageDispatcherServlet.setApplicationContext(context);
         messageDispatcherServlet.setTransformWsdlLocations(true);
 
+        // Directs servlet url to /ws/*
         return new ServletRegistrationBean<>(messageDispatcherServlet, "/ws/*");
     }
 

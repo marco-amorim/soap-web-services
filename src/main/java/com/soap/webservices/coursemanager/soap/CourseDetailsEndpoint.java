@@ -69,7 +69,7 @@ public class CourseDetailsEndpoint {
     @ResponsePayload
     public DeleteCourseDetailsResponse deleteCourseDetailsRequest(@RequestPayload DeleteCourseDetailsRequest request) {
 
-        int status = service.deleteById(request.getId());
+        Status status = service.deleteById(request.getId());
 
         DeleteCourseDetailsResponse response = new DeleteCourseDetailsResponse();
         response.setStatus(status);
